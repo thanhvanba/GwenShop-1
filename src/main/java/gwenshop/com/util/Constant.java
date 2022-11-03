@@ -1,4 +1,4 @@
-package Shop.com.util;
+package gwenshop.com.util;
 
 public class Constant {
     public static final String SESSION_USERNAME = "username"; //use for session

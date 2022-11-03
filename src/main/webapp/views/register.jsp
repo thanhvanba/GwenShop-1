@@ -45,19 +45,17 @@
                         <c:if test="${announce != null}">
                             <div class="alert alert-success" role="alert">${announce}</div>
                         </c:if>
-
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i></label>
+                            <input type="email" name="email" id="email" placeholder="Email của bạn"/>
+                        </div>
                         <div class="form-group">
                             <label for="fullname"><i class="zmdi zmdi-account material-icons-name"></i></label>
                             <input type="text" name="fullname" id="fullname" placeholder="Họ tên của bạn">
                         </div>
-
                         <div class="form-group">
-                            <label for="username"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                            <input type="text" name="username" id="username" placeholder="Tên tài khoản của bạn"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="email"><i class="zmdi zmdi-email"></i></label>
-                            <input type="email" name="email" id="email" placeholder="Email của bạn"/>
+                            <label for="phone_number"><i class="zmdi zmdi-phone material-icons-name"></i></label>
+                            <input type="text" id="phone_number" name="phone" placeholder="Số điện thoại của bạn">
                         </div>
                         <div class="form-group">
                             <label for="pass"><i class="zmdi zmdi-lock"></i></label>

@@ -1,4 +1,4 @@
-package Shop.com.util.Path;
+package gwenshop.com.util.Path;
 
 public class Constant {
     public static String REGISTER = "/views/register.jsp";
