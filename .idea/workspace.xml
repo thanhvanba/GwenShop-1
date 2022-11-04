@@ -10,21 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a265824-11f0-44c3-9c0d-56cc4834dcef" name="Changes" comment="Gwen shop for login and register">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AccessGoogle-lib.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/LoginGoogleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/model/GooglePojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/util/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/util/common/GoogleUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/GwenShop_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/GwenShop_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gwenshop/com/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gwenshop/com/util/Constant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/LoginGoogleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/LoginGoogleController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +153,7 @@
       <workItem from="1667463734871" duration="10000" />
       <workItem from="1667493453567" duration="7853000" />
       <workItem from="1667532311156" duration="4171000" />
-      <workItem from="1667537008045" duration="1317000" />
+      <workItem from="1667537008045" duration="2990000" />
     </task>
     <task id="LOCAL-00001" summary="Gwen shop for login and register">
       <created>1667495588955</created>
@@ -173,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667495588955</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Gwen shop for login and register">
+      <created>1667538633762</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667538633762</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,13 +186,38 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="betaGoogleAccess" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
                 </map>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
