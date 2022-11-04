@@ -1,6 +1,6 @@
 package gwenshop.com.Controller;
 
-import gwenshop.com.util.Constant;
+import gwenshop.com.util.Constants;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -77,7 +77,7 @@ public class LoginController extends HttpServlet {
     }
 
     private void saveRemeberMe(HttpServletResponse response, String username){
-        Cookie cookie = new Cookie(Constant.COOKIE_REMEMBER, username);
+        Cookie cookie = new Cookie(Constants.COOKIE_REMEMBER, username);
         cookie.setMaxAge(30*60);
         response.addCookie(cookie);
     }

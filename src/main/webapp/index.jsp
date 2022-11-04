@@ -9,6 +9,9 @@
 <h1><%= "Hello World!" %>
 </h1>
 <br/>
-<c:redirect url="views/login.jsp"></c:redirect>
+<a href="login">Login</a>
+<c:if test="${id != null || name != null || email != null}">
+    <p>ID: ${id} <br/>Welcome ${name} <br/>Email: ${email}</p>
+</c:if>
 </body>
 </html>
