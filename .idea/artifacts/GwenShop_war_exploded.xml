@@ -40,6 +40,7 @@
           <element id="library" level="project" name="Maven: com.google.apis:google-api-services-plus:v1-rev20190328-1.30.10" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:fluent-hc:4.5.13" />
           <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: com.restfb:restfb:2022.9.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

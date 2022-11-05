@@ -66,10 +66,13 @@
                     <div class="social-login">
                         <span class="social-label">Hoăc kết nối qua</span>
                         <ul class="socials">
-                            <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                            <li><a
+                                    href="https://www.facebook.com/dialog/oauth?client_id=1866396290374836&redirect_uri=https://localhost:8080/GwenShop_war_exploded/login-facebook">
+                                <i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
                             <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                            <li><a href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8080/GwenShop_war_exploded/login-google&response_type=code
-    &client_id=113142238636-9ddk69kacndb9d01qd4lhludckl5o343.apps.googleusercontent.com&approval_prompt=force"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                            <li><a
+                                    href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8080/GwenShop_war_exploded/login-google&response_type=code&client_id=113142238636-9ddk69kacndb9d01qd4lhludckl5o343.apps.googleusercontent.com&approval_prompt=force">
+                                <i class="display-flex-center zmdi zmdi-google"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -82,6 +85,7 @@
 <!-- JS -->
 <script src="${pageContext.request.contextPath}/views/public/vendor/jquery/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath}/views/public/js/main.js"></script>
+
 
 <!-- JS -->
 <script src="//code.jquery.com/jquery-3.2.1.slim.min.js"
