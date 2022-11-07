@@ -16,7 +16,7 @@ public class LoginFacebookController extends HttpServlet {
         String code = request.getParameter("code");
 
         if (code == null || code.isEmpty()) {
-            RequestDispatcher dis = request.getRequestDispatcher("login.jsp");
+            RequestDispatcher dis = request.getRequestDispatcher(request.getContextPath() + "/login.jsp");
             dis.forward(request, response);
         } else {
             String accessToken = RestFB.getToken(code);

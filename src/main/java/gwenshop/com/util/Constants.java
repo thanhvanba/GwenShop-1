@@ -15,6 +15,6 @@ public class Constants {
     //Facebook get api
     public static String FACEBOOK_APP_ID = "1866396290374836";
     public static String FACEBOOK_APP_SECRET = "cc2764bdcfcd0ca4f7f51d6266076ce2";
-    public static String FACEBOOK_REDIRECT_URL = "https://localhost:8443/AccessFacebook/login-facebook";
+    public static String FACEBOOK_REDIRECT_URL = "https://localhost:8080/GwenShop_war_exploded/login-facebook";
     public static String FACEBOOK_LINK_GET_TOKEN = "https://graph.facebook.com/oauth/access_token?client_id=%s&client_secret=%s&redirect_uri=%s&code=%s";
 }
