@@ -23,6 +23,7 @@ public class LoginFacebookController extends HttpServlet {
             User user = RestFB.getUserInfo(accessToken);
             request.setAttribute("id", user.getId());
             request.setAttribute("name", user.getName());
+            request.setAttribute("email", user.getHometownName());
             RequestDispatcher dis = request.getRequestDispatcher("index.jsp");
             dis.forward(request, response);
         }
