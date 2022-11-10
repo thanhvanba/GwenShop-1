@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a265824-11f0-44c3-9c0d-56cc4834dcef" name="Changes" comment="Gwen shop for login and register">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/LoginFacebookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/LoginFacebookController.java" afterDir="false" />
-    </list>
+    <list default="true" id="5a265824-11f0-44c3-9c0d-56cc4834dcef" name="Changes" comment="Gwen shop for login and register" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
