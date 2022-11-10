@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5a265824-11f0-44c3-9c0d-56cc4834dcef" name="Changes" comment="Gwen shop for login and register">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/LoginFacebookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/LoginFacebookController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,15 +164,7 @@
       <workItem from="1667656099551" duration="6088000" />
       <workItem from="1667714395947" duration="21000" />
       <workItem from="1667806863911" duration="2473000" />
-      <workItem from="1667879931453" duration="2017000" />
-      <workItem from="1667974759594" duration="7000" />
-      <workItem from="1667974779110" duration="510000" />
-      <workItem from="1667975303319" duration="600000" />
-      <workItem from="1667982981471" duration="164000" />
-      <workItem from="1667991961603" duration="139000" />
-      <workItem from="1668009594780" duration="58000" />
-      <workItem from="1668064553505" duration="640000" />
-      <workItem from="1668088325141" duration="372000" />
+      <workItem from="1667879931453" duration="1289000" />
     </task>
     <task id="LOCAL-00001" summary="Gwen shop for login and register">
       <created>1667495588955</created>
