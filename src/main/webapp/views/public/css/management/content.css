@@ -71,6 +71,7 @@
     background-color: var(--main-color);
 }
 .table_wrapper table{
+    font-size: 1rem;
     width: 100%;
     background-color: white;
     border-collapse: collapse;
