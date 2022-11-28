@@ -125,6 +125,7 @@ button{
 }
 
 .table_wrapper table td{
+    font-size: 1rem;
     text-align: center;
     padding: 1rem;
     border-collapse: collapse;

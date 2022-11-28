@@ -81,7 +81,7 @@
     scrollbar-width: thin;
     z-index: 999;
 }
-#form-inforProduct section{
+#form-inforProduct #inforProduct_wrapper{
     display: flex;
 }
 #form-inforProduct .icon_close{
@@ -116,7 +116,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: #f6f6f6;
+    background-color: #90A4AE;
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -176,10 +176,28 @@
     color: black;
     margin-left: 3rem;
     position: relative;
+    padding-top: 0.5rem;
+}
+#form-inforProduct__infor input{
+    border: 1px solid black;
+    border-radius: 4px;
+}
+#form-inforProduct__infor input:hover{
+    border-color: #1dbfaf;
 }
 #form-inforProduct__infor section{
-    align-items: center;
-    margin-top: 1rem;
+    position: relative;
+}
+
+#form-inforProduct__infor section span{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 99%;
+    left: 0;
+    color: #f33a58;
+}
+#form-inforProduct__infor section.invalid input{
+    border-color: #f33a58;
 }
 #form-inforProduct__infor #product_name{
     width: 30rem;
@@ -194,13 +212,14 @@
     padding: 0.5rem;
     color: var(--hover-color);
 }
+
 #form-inforProduct__infor #product_amount{
     margin-bottom: 10rem;
 }
 #form-inforProduct__infor #product_amount,
 #form-inforProduct__infor #product_color,
 #form-inforProduct__infor #product_size{
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 #form-inforProduct__infor #product_amount label,
 #form-inforProduct__infor #product_color label,
@@ -213,10 +232,12 @@
 #form-inforProduct__infor #product_size .list-size input{
     padding: 0.7rem;
     margin-right: 2rem;
-    border: 1px solid black;
+    margin-top: 1.5rem;
 }
+
 #form-inforProduct__infor .button-insert,
 #form-inforProduct__infor .button-update{
+    display: none;
     position: absolute;
     padding: 1rem;
     min-width: 20rem;
