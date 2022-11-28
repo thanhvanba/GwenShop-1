@@ -11,6 +11,7 @@
     font-size: 1.6rem;
     list-style: none;
     padding: 2.5rem;
+    box-shadow: 0 0.1px 0.4px white;
 }
 .sidebar li:hover{
     cursor: pointer;
@@ -21,9 +22,13 @@
     padding: 5rem;
 }
 
-.sidebar .category .category__icon
+.sidebar .sidebar_items .sidebar_item-icon
 {
     width: 1.6rem;
     height: 1.6rem;
     margin-right: 1rem;
+}
+.sidebar .sidebar_items .sidebar_item{
+    text-decoration: none;
+    color: white;
 }

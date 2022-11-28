@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
 
-
 :root{
-    --main-color: #1e121f;
+    --main-color: #181b1c;
     --hover-color: #e38d5f;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 /* #background_website-color{
     position: fixed;

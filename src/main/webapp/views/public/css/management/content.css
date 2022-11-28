@@ -71,10 +71,11 @@
     background-color: var(--main-color);
 }
 .table_wrapper table{
-    font-size: 1rem;
     width: 100%;
+    font-size: 1rem;
     background-color: white;
     border-collapse: collapse;
+    border-spacing: 0;
 }
 
 .table_wrapper table td{
@@ -105,28 +106,14 @@
 }
 
 /* Show Infor member */
-#inforMember{
-    display: none;
+#inforMember {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40rem;
-    height: 50rem;
-    background-color: white;
-    border-radius: 4px;
-    z-index: 1;
-}
-#inforMember .form-info{
-    position: absolute;
-    top: 2rem;
-    color: black;
-    margin-left: 3rem;
-}
-
-#inforMember .form-info span{
-    font-size: 1.6rem;
-    color: black;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
 }
 #inforMember .icon_close{
     width: 1.6rem;
@@ -135,29 +122,27 @@
     right: 1rem;
     top: 0.5rem;
 }
-#inforMember .form-info td{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-#inforMember .form-info td input,
-#inforMember .form-info td #role{
+#inforMember #role{
     border: 1px solid #90A4AE;
     outline: none;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 4px;
 }
 #inforMember .form-info--button{
     display: flex;
-    position: absolute;
+    flex-direction: row-reverse;
+    /* position: absolute;
     bottom: 2rem;
-    right: 2rem;
+    right: 2rem; */
 }
-#inforMember button{
-    margin-left: 1rem;
-    padding: 1rem 1.5rem;
-    width: 10rem;
-    border-radius: 2rem;
 
+#inforMember .form-info--button .btn_Insert,
+#inforMember .form-info--button .btn_Delete,
+#inforMember .form-info--button .btn_Update{
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    min-width: 10rem;
 }
 #inforMember .form-info--button .btn_Insert{
     display: none;
@@ -177,7 +162,93 @@
     transform: rotateY(-20deg);
 }
 
-.toast_nitification{
+.form {
+    width: 48rem;
+    min-height: 10rem;
+    padding: 3.2rem 2.4rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    margin: 2.4rem;
+    align-self: center;
+    box-shadow: 0 0.2rem 0.5rem 0 rgba(51,62,73,.1);
+}
+.form .heading {
+    font-size: 2rem;
+    color: black;
+}
+.form-group {
+    display: flex;
+    margin-bottom: 1.6rem;
+    flex-direction: column;
+}
+.form-group:last-of-type{
+    margin-left: 2rem;
+}
+.form-label,
+.form-message {
+    text-align: left;
+    color: black;
+}
+
+.form-label {
+    font-weight: 700;
+    padding-bottom: 0.6rem;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.form-control {
+    height: 4rem;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.form-control:hover {
+    border-color: #1dbfaf;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+/*
+.form-submit {
+    outline: none;
+    background-color: #1dbfaf;
+    margin-top: 1.2rem;
+    padding: 1.2rem 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 1.4rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #1ac7b6;
+} */
+
+.spacer {
+    margin-top: 3.6rem;
+}
+
+/* NOTIFICATION */
+.toast_notification{
     position: fixed;
     top: 5px;
     right: 0;
@@ -189,8 +260,8 @@
 }
 #toast {
     position: fixed;
-    top: 32px;
-    right: 32px;
+    top: 3.2rem;
+    right: 3.2rem;
     z-index: 999999;
 }
 
@@ -199,13 +270,14 @@
     align-items: center;
     background-color: #fff;
     border-radius: 2px;
-    padding: 20px 0;
-    min-width: 400px;
-    max-width: 450px;
-    border-left: 4px solid;
+    padding: 2rem 0;
+    min-width: 40rem;
+    max-width: 45rem;
+    border-left: 0.4rem solid;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
     transition: all linear 0.3s;
 }
+
 
 .toast--success {
     border-color: #47d864;
@@ -240,16 +312,16 @@
 }
 
 .toast + .toast {
-    margin-top: 24px;
+    margin-top: 2.4rem;
 }
 
 .toast__icon {
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 .toast__icon,
 .toast__close {
-    padding: 0 16px;
+    padding: 0 1.6rem;
 }
 
 .toast__body {
@@ -257,20 +329,20 @@
 }
 
 .toast__title {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     color: #333;
 }
 
 .toast__msg {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #888;
     margin-top: 6px;
     line-height: 1.5;
 }
 
 .toast__close {
-    font-size: 20px;
+    font-size: 2rem;
     color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
