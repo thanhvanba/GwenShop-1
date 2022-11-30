@@ -183,3 +183,12 @@ function Validator(options) {
     })
 }
 
+let header_avata_user = document.querySelector("#header__avata-user");
+header_avata_user.onclick = ()=>{
+    header_avata_user.focus();
+    if(document.querySelector("#header__avata-user.show-popup")){
+        header_avata_user.classList.remove("show-popup")
+    }
+    else
+        header_avata_user.classList.add("show-popup")
+}

@@ -10,7 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a265824-11f0-44c3-9c0d-56cc4834dcef" name="Changes" comment="Gwen shop for login and register">
+      <change afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/management/orderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/sidebar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/public/css/management/order/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/public/js/OrderManagement/getElement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/management/categoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/management/categoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/management/productController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/management/productController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/management/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gwenshop/com/Controller/management/employeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/category.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/customer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/public/css/management/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/public/css/management/header.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +37,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="Class" />
         <option value="Jsp File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -68,26 +84,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/LapTrinhWeb/Project/GwenShop",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/LapTrinhWeb/Project/GwenShop&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\intelliji\GwenShop\src\main\webapp\views\public" />
@@ -262,6 +278,8 @@
       <workItem from="1669233861728" duration="610000" />
       <workItem from="1669597348604" duration="1708000" />
       <workItem from="1669600448069" duration="10133000" />
+      <workItem from="1669739731864" duration="1291000" />
+      <workItem from="1669751777406" duration="3254000" />
     </task>
     <task id="LOCAL-00001" summary="Gwen shop for login and register">
       <created>1667495588955</created>
