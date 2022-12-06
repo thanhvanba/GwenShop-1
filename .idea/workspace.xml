@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a265824-11f0-44c3-9c0d-56cc4834dcef" name="Changes" comment="Gwen shop for login and register">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/public/css/cart.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +21,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Class" />
         <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -194,7 +194,7 @@
     </configuration>
     <configuration name="cart.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/views/cart.jsp" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="GwenShop:war exploded">
           <settings>
@@ -313,7 +313,8 @@
       <workItem from="1670261223455" duration="295000" />
       <workItem from="1670261530662" duration="5000" />
       <workItem from="1670261543741" duration="321000" />
-      <workItem from="1670261872282" duration="120000" />
+      <workItem from="1670261872282" duration="742000" />
+      <workItem from="1670346845999" duration="1022000" />
     </task>
     <task id="LOCAL-00001" summary="Gwen shop for login and register">
       <created>1667495588955</created>
