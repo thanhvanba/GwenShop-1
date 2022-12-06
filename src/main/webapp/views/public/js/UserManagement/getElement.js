@@ -32,6 +32,7 @@ for(let i = 0; i<100; i++)
                         </tr>`
 }
 
+
 let layer = document.getElementById("layer");
 let checkbox_wastebasket = document.querySelectorAll(".table_wrapper input")
 let icon_wastebasket = document.querySelector(".content__header--buttonDel")
