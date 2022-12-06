@@ -10,8 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a265824-11f0-44c3-9c0d-56cc4834dcef" name="Changes" comment="Gwen shop for login and register">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/public/css/cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +19,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="Jsp File" />
-        <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -80,7 +74,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/intelliji/hyper-shop-admin&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/LapTrinhWeb/Project/GwenShop&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -99,14 +93,12 @@
       <recent name="D:\intelliji\GwenShop\src\main\java\gwenshop\com\util" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\LapTrinhWeb\Project\GwenShop\src\main\webapp\views\public\css\management" />
       <recent name="D:\LapTrinhWeb\Project\GwenShop\src\main\webapp\views\public\js\UserManagement" />
       <recent name="D:\intelliji\GwenShop\target\GwenShop-1.0-SNAPSHOT\WEB-INF\lib" />
       <recent name="D:\intelliji\GwenShop\src\main\webapp\views" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.cart.jsp">
-    <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="GwenShop:war exploded">
           <settings>
@@ -280,10 +272,6 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Tomcat Server.Tomcat 9.0.65" />
-      <item itemvalue="Tomcat Server.cart.jsp" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -309,12 +297,6 @@
       <workItem from="1668162944871" duration="2972000" />
       <workItem from="1668252604944" duration="299000" />
       <workItem from="1668287585543" duration="1159000" />
-      <workItem from="1670260996791" duration="212000" />
-      <workItem from="1670261223455" duration="295000" />
-      <workItem from="1670261530662" duration="5000" />
-      <workItem from="1670261543741" duration="321000" />
-      <workItem from="1670261872282" duration="742000" />
-      <workItem from="1670346845999" duration="1022000" />
     </task>
     <task id="LOCAL-00001" summary="Gwen shop for login and register">
       <created>1667495588955</created>
