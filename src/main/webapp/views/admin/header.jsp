@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<link rel="stylesheet" href="views/public/css/management/header.css">
+<link rel="stylesheet" href="/views/public/css/management/header.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <div id="header">
     <div class="header__wrap">
         <div class="header__item-left">

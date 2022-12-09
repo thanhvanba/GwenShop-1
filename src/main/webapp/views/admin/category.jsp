@@ -28,10 +28,7 @@
             </div>
             <div class="table_wrapper">
                 <table class="table_category">
-                    <thead>
-                    </thead>
-                    <tbody>
-                    </tbody>
+
                 </table>
             </div>
         </div>

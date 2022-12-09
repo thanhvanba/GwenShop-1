@@ -1,38 +1,6 @@
-
-let product_des = `
-MÔ TẢ SẢN PHẨM
-Áo khoác gió cho bé trai bé gái chống nước cản gió hiệu quả
-⭐ THÔNG TIN SẢN PHẨM:
-Chất vải áo gió cho bé là polyester loại 1 mềm mịn đẹp, bao giặt máy không bị ra màu
-Hàng đẹp cho các bạn mua cho bé mặc trong mùa mưa sài gòn và thu đông ở Ngoài Bắc là rất hợp lý
-Siêu gọn, nhẹ, không nhăn, không lo bị bí nóng.
-Bảo vệ cho bé an toàn tránh khỏi mưa nhẹ, gió rét và bụi
-Thiết kế lớp gió bên ngoài mềm mại và lớp lưới bên trong, 2 túi ngoài có khóa kéo, túi trước ngực thời trang, túi ngực trong tiện lợi
-Bảng chọn Size chuẩn cho bé:
-Size 6-7: 15-21kg; chiều cao bé từ 1m1-1m2
-Size 8-9: 22-27kg; chiều cao bé từ 1m2-1m3
-Size 10-11: 28-34kg; chiều cao bé từ 1m3-1m39
-Size 12-13: 35-43kg; chiều cao bé từ 1m4-1m50
-Size 13-14: 44-55kg; chiều cao bé dưới 1m6
-Với những trường hợp khác, anh chị vui lòng inbox trực tiếp cho shop để shop tư vấn cho mình nhé!!!
-============================
-⭐ HƯỚNG DẪN CÁCH ĐẶT HÀNG:
-✅ Cách chọn Size: Shop đã phân bảng Size, bảng Màu. Bạn nên Inbox Shop, cung cấp Chiều cao và Cân nặng để shop tư vấn cho phù hợp!
-✅ Cách đặt hàng qua Shopee:
-Nếu mua 1 sản phẩm thì bạn chọn Màu rồi ấn MUA HÀNG. Nếu bạn muốn mua 2-3 Sản phẩm khác nhau hoặc 2-3 màu khác nhau để được Freeship:
-+ Bạn chọn từng Sản phẩm rồi thêm vào Giỏ hàng.
-+ Khi Giỏ Hàng đã có đầy đủ các Sản phẩm cần Mua, bạn mới tiến hành "Thanh toán".
-🛑 LƯU Ý:
-📌 Quý Khách vui lòng đọc kỹ Thông Tin Sản Phẩm trước khi đặt hàng, tránh đặt rồi hủy hàng nhé, hoặc có hủy thì hủy sớm trước khi đơn hàng đưa vận chuyển nhé. Vì sau khi đặt hàng, hàng sẽ được Shop gói và gửi đi liền trong ngày hoặc ngày hôm sau. Vì thế việc hủy hàng sẽ gây nhiều khó khăn cho Shop. Rất mong Quý Khách cảm thông và đắn đo giúp Shop!!!
-📌 Theo quy định của Shopee Khách hàng sẽ KHÔNG ĐƯỢC XEM HÀNG trước khi thanh toán nhưng được đổi trả sau 24h nếu sản phẩm bị lỗi tính từ thời điểm nhận được hàng. Hãy chắc chắn nhận hàng và để thông tin chính xác khi ấn Mua hàng tránh trường hợp giao đi rồi lại quay về.
-📌 Hàng sẽ được Shop giao cho vận chuyển trong 1 ngày kể từ khi đặt hàng. Vì vậy, nếu có yêu cầu hủy đơn hàng vui lòng inbox Shop và quyết định trước khi shop giao cho vận chuyển. Vận chuyển của Shopee sẽ liên hệ quý khách để giao hàng. (Nội thành HN 1-2 ngày, Ngoại thành và các Tỉnh TP khác 3-5 ngày)
-#ao #khoac #gio #cho #be #betrai #begai #chong #nuoc #cangio #amap #cute #2lop #lot #luoi #co #mu #thoi #trang #cao #cap #dep #aokhoac #aogio #aogiotrecon #aogiochobe #aokhoacbe #aokhoactrecon #aokhoacdu #aokhoacchobenam #aokhoacchobenu #aokhoacnhe
-`
-description.innerHTML = product_des;
-
 // MAIN //
-product_control();
-function product_control()
+getcontrol();
+function getcontrol()
 {
     getElement();
     checkInfoInput();
@@ -103,7 +71,7 @@ function product_control()
             }
             if(elmPar.className == list_image[0].className)
             {
-                product_control();
+                getcontrol();
                 plusImages(-1);
             }
         }
@@ -143,7 +111,7 @@ addColor.addEventListener("click", ()=>{
     <span class="form-message"></span>
   `
     listColor.appendChild(section)
-    product_control();
+    getcontrol();
 })
 
 
@@ -155,7 +123,7 @@ addSize.addEventListener("click", ()=>{
     <span class="form-message"></span>
   `
     listSize.appendChild(section)
-    product_control();
+    getcontrol();
 })
 
 addNewImage.addEventListener("click", ()=>{
@@ -190,7 +158,7 @@ function setImage(file){
     wrapper.appendChild(img);
     list_image_wrap.insertBefore(wrapper, list_image[list_image.length-1]);
     img.style.backgroundImage = `url(${URL.createObjectURL(file)})`;
-    product_control();
+    getcontrol();
     showImage.style.backgroundImage = image_item[image_item.length-2].style.backgroundImage;
     plusImages(1);
 }
