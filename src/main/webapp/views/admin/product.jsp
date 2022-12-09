@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="views/public/fontawesome-free-6.1.1-web/css/all.min.css">
-    <link rel="stylesheet" href="views/public/css/management/base.css">
-    <link rel="stylesheet" href="views/public/css/management/content.css">
-    <link rel="stylesheet" href="views/public/css/management/product/content.css">
+    <link rel="stylesheet" href="/views/public/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="/views/public/css/management/base.css">
+    <link rel="stylesheet" href="/views/public/css/management/content.css">
+    <link rel="stylesheet" href="/views/public/css/management/product/content.css">
     <title>product</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
                     <div class="search">
                         <input class="search--input" type="text" onkeypress="checkEnterClick(event)" placeholder="Nhập tên hoặc ID">
                     </div>
-                    <img src="views/public/icon/icon_add.png" class="content__header--buttonAdd" alt="">
+                    <img src="/views/public/icon/icon_add.png" class="content__header--buttonAdd" alt="">
                 </div>
                 <div class="">
                     <div id="filter_product">
@@ -42,16 +42,13 @@
                             </select>
                         </div>
                     </div>
-                    <img src="views/public/icon/icon_wastebasket.png" class="content__header--buttonDel" alt="">
+                    <img src="/views/public/icon/icon_wastebasket.png" class="content__header--buttonDel" alt="">
                 </div>
 
             </div>
             <div class="table_wrapper">
                 <table class="table_product">
-                    <thead>
-                    </thead>
-                    <tbody>
-                    </tbody>
+
                 </table>
             </div>
             <form action="" method="POST" id="form-inforProduct">
@@ -118,10 +115,10 @@
     </div>
 </div>
 <div id="toast"></div>
-<script src="views/public/js/ProductManagement/getElement.js"></script>
-<script src="views/public/js/main.js"></script>
-<script src="views/public/js/ProductManagement/checkInfo.js"></script>
-<script src="views/public/js/ProductManagement/product.js"></script>
+<script src="/views/public/js/ProductManagement/getElement.js"></script>
+<script src="/views/public/js/main.js"></script>
+<script src="/views/public/js/ProductManagement/checkInfo.js"></script>
+<script src="/views/public/js/ProductManagement/product.js"></script>
 </body>
 </html>
 

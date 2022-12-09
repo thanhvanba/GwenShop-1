@@ -1,6 +1,19 @@
 let openSidebar = true;
 let sidebar = document.getElementById('sidebar')
 let content = document.querySelector('#web_body .content')
+
+function loadDataTable(){
+    $.ajax({
+        url: `${window.location.href}/load-table`,
+        method: "GET",
+        success: function (data) {
+            let table_content = document.querySelector(".table_wrapper table");
+            table_content.innerHTML = data;
+            getcontrol();
+        }
+    });
+}
+loadDataTable();
 document.getElementById('guide-button').addEventListener("click", ()=>{
     if(openSidebar == true)
     {
@@ -88,101 +101,115 @@ function toast({ title = "", message = "", type = "info", duration = 3000 }) {
         main.appendChild(toast);
     }
 }
-checkbox_wastebasket.forEach((item)=>{
-    item.addEventListener("click", ()=>{
-        let checked = false;
-        checkbox_wastebasket.forEach((item)=>{
-            if(item.checked == true){
-                checked = true
-                icon_wastebasket.style.display = "block";
-            }
-        })
-        if(checked == false){
-            icon_wastebasket.style.display = "none";
-        }
-    })
-})
-
-icon_wastebasket.addEventListener("click", ()=>{
-    showSuccessToast("xóa");
-})
-
-function Validator(options) {
-    function validate(inputElement, rule)
-    {
-        errorElement = inputElement.parentElement.querySelector(options.errorSelector);
-        if(rule.test(inputElement.value)){
-            errorElement.innerText = rule.test(inputElement.value);
-            inputElement.parentElement.classList.add("invalid");
-        }
-        else{
-            errorElement.innerText = '';
-            inputElement.parentElement.classList.remove("invalid");
-        }
-        return errorElement.innerText? false:true;
-    }
-    let formElement = document.querySelector(options.form);
-    if(formElement)
-    {
-        formElement.onsubmit = function(e){
-            e.preventDefault();
-            let isFormValid = true;
-            options.rules.forEach((rule)=>{
-                let isValid = true;
-                if(rule.selector.length >= 1)
-                {
-                    rule.selector.forEach((item_rule)=>{
-                        let inputElement = item_rule;
-                        isValid = validate(inputElement, rule);
-                    })
-                }
-                else{
-                    let inputElement = rule.selector;
-                    isValid = validate(inputElement, rule);
-                }
-                if(!isValid){
-                    isFormValid = false;
+function checkBox_checked(){
+    checkbox_wastebasket.forEach((item)=>{
+        item.addEventListener("click", ()=>{
+            let checked = false;
+            checkbox_wastebasket.forEach((item)=>{
+                if(item.checked == true){
+                    checked = true
+                    icon_wastebasket.style.display = "block";
                 }
             })
-            if (options.listImage)
-                if(document.querySelectorAll(options.listImage).length == 1)
-                    isFormValid = false;
-
-
-            if(isFormValid)
-            {
-                showSuccessToast('thực thi');
+            if(checked == false){
+                icon_wastebasket.style.display = "none";
             }
-            else{
-                showErrorToast('thực thi');
-            }
-        }
-    }
+        })
+    })
+    icon_wastebasket.addEventListener("click", ()=>{
+        showSuccessToast("xóa");
+    })
+}
+
+function Validator(options) {
     options.rules.forEach((rule)=>{
         if(rule.selector.length >= 1)
         {
             rule.selector.forEach((item_rule)=>{
                 let inputElement = item_rule;
                 inputElement.onblur = function () {
-                    validate(inputElement, rule);
+                    validate(options,inputElement, rule);
                 }
                 inputElement.oninput = function () {
-                    validate(inputElement, rule);
+                    validate(options,inputElement, rule);
                 }
             })
         }
         else{
             let inputElement = rule.selector;
             inputElement.onblur = function () {
-                validate(inputElement, rule);
+                validate(options,inputElement, rule);
             }
             inputElement.oninput = function () {
-                validate(inputElement, rule);
+                validate(options,inputElement, rule);
             }
         }
     })
 }
+function validate(options,inputElement, rule)
+{
+    errorElement = inputElement.parentElement.querySelector(options.errorSelector);
+    if(rule.test(inputElement.value)){
+        errorElement.innerText = rule.test(inputElement.value);
+        inputElement.parentElement.classList.add("invalid");
+    }
+    else{
+        errorElement.innerText = '';
+        inputElement.parentElement.classList.remove("invalid");
+    }
+    return errorElement.innerText? false:true;
+}
+function checkSubmit(options, btn_name=""){
+    if(btn_name == "delete"){
+        DeleteUserData();
+        showSuccessToast("xóa")
+    }
+    else {
+        let formElement = document.querySelector(options.form);
+        if(formElement)
+        {
+            formElement.onsubmit = function (e){
+                let isFormValid = true;
+                options.rules.forEach((rule)=>{
+                    let isValid = true;
+                    if(rule.selector.length >= 1)
+                    {
+                        rule.selector.forEach((item_rule)=>{
+                            let inputElement = item_rule;
+                            isValid = validate(options,inputElement, rule);
+                        })
+                    }
+                    else{
+                        let inputElement = rule.selector;
+                        isValid = validate(options,inputElement, rule);
+                    }
+                    if(!isValid){
+                        isFormValid = false;
+                    }
+                })
+                if (options.listImage)
+                    if(document.querySelectorAll(options.listImage).length == 1)
+                        isFormValid = false;
 
+                if(isFormValid)
+                {
+                    if(btn_name == "create"){
+                        InsertUserData();
+                    }
+                    else if(btn_name == "edit"){
+                        UpdateUserData();
+                    }
+                    showSuccessToast('thực thi');
+                    e.preventDefault();
+                }
+                else{
+                    showErrorToast('thực thi');
+                    e.preventDefault();
+                }
+            }
+        }
+    }
+}
 let header_avata_user = document.querySelector("#header__avata-user");
 header_avata_user.onclick = ()=>{
     header_avata_user.focus();
